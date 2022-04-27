@@ -1,0 +1,116 @@
+oblacnost;srazky;teplota;vlhkost;classes
+oblacno;slabe;nizka;mala;R          1
+zatazeno;vydatne;vysoka;mala;Q      2
+polojasno;slabe;nizka;mala;S        3
+oblacno;vydatne;stredni;mala;R      4
+polojasno;vydatne;nizka;mala;S      5
+polojasno;vydatne;vysoka;velka;S    6
+zatazeno;slabe;vysoka;mala;Q        7
+polojasno;slabe;vysoka;velka;Q      8
+oblacno;slabe;vysoka;mala;Q         9
+oblacno;vydatne;vysoka;mala;S       10
+zatazeno;slabe;stredni;velka;R      11
+zatazeno;vydatne;stredni;mala;S     12
+
+
+## TREE 1 ##
+
+## 4-12 TRENOVACI ##
+
+oblacnost;srazky;teplota;vlhkost;classes
+
+oblacno;vydatne;stredni;mala;R
+polojasno;vydatne;nizka;mala;S
+polojasno;vydatne;vysoka;velka;S
+zatazeno;slabe;vysoka;mala;Q
+polojasno;slabe;vysoka;velka;Q
+oblacno;slabe;vysoka;mala;Q
+oblacno;vydatne;vysoka;mala;S
+zatazeno;slabe;stredni;velka;R
+zatazeno;vydatne;stredni;mala;S
+
+## NODE SRAZKY ##
+# slabe
+zatazeno;vysoka;mala;Q        7
+polojasno;vysoka;velka;Q      8
+oblacno;vysoka;mala;Q         9
+zatazeno;stredni;velka;R      11
+
+# vydatne
+oblacno;stredni;mala;R      4
+polojasno;nizka;mala;S      5
+polojasno;vysoka;velka;S    6
+oblacno;vysoka;mala;S       10
+zatazeno;stredni;mala;S     12
+
+## NODE TEPLOTA OD SLABE SRAZKY ##
+
+# stredni 
+zatazeno;velka;R      11
+
+# vysoka
+zatazeno;mala;Q        7
+polojasno;velka;Q      8
+oblacno;mala;Q         9
+
+## NODE OBLACNOST OD VYDATNE SRAZKY ##
+
+# polojasno
+nizka;mala;S      5
+vysoka;velka;S    6
+
+# oblacno
+stredni;mala;R      4
+vysoka;mala;S       10
+
+# zatazeno
+stredni;mala;S     12
+
+## TREE 2 ##
+
+oblacnost;srazky;teplota;vlhkost;classes
+
+oblacno;slabe;nizka;mala;R          1
+zatazeno;vydatne;vysoka;mala;Q      2
+polojasno;slabe;nizka;mala;S        3
+oblacno;vydatne;stredni;mala;R      4
+polojasno;vydatne;nizka;mala;S      5
+polojasno;vydatne;vysoka;velka;S    6
+zatazeno;slabe;vysoka;mala;Q        7
+polojasno;slabe;vysoka;velka;Q      8
+oblacno;slabe;vysoka;mala;Q         9
+
+## NODE OBLACNOST
+# polojasno
+slabe;nizka;mala;S        3
+vydatne;nizka;mala;S      5
+vydatne;vysoka;velka;S    6
+slabe;vysoka;velka;Q      8
+-->
+## srazky
+# slabe
+nizka;mala;S        3
+vysoka;velka;Q      8
+
+# vydatne
+nizka;mala;S      5
+vysoka;velka;S    6
+
+# oblacno
+slabe;nizka;mala;R          1
+vydatne;stredni;mala;R      4
+slabe;vysoka;mala;Q         9
+-->
+## teplota
+# nizka
+slabe;mala;R     1
+
+# stredni
+vydatne;mala;R   4
+
+# vysoka
+slabe;mala;Q     9
+
+# zatazeno
+vydatne;vysoka;mala;Q      2
+slabe;vysoka;mala;Q        7
